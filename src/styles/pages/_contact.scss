@@ -1,0 +1,250 @@
+#contact {
+    background: #eae2b7;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.backDrop {
+    width: 50px;
+    /* background: #eae2b7; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.2em 2.1em;
+    border-radius: 50%;
+    margin: 10px 10px;
+    float: left;
+}
+.backDrop a {
+    color: #232323;
+    text-decoration: none;
+    /* border: 1px solid #232323; */
+    padding: 0px 10px;
+    border-radius: 50px;
+    background: linear-gradient(145deg, #faf2c4, #d3cba5);
+    box-shadow:  20px 20px 60px #c7c09c, 
+                -20px -20px 60px #ffffd2;
+    display: flex;
+    font-family: monospace;
+    font-size: 1.3em;
+}
+.backDrop a:hover {
+    border-radius: 50px;
+    background: linear-gradient(145deg, #d3cba5, #faf2c4);
+    box-shadow:  20px 20px 60px #c7c09c, 
+                -20px -20px 60px #ffffd2;
+}
+#clearfix {
+    clear: both;
+}
+
+.contactPageTrans {
+    box-sizing: border-box;
+    padding: 0;
+    display: block;
+    max-width: 912px;
+    margin: 0 auto;
+}
+.contactPageTrans h1 {
+    font-family: inherit;
+    padding-top: 140px;
+}
+.contactPageTrans a {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 30px;
+    color: tomato;
+}
+.contactPageTrans code {
+    text-decoration: underline;
+    
+}
+.contactPageTrans a:hover {
+    text-decoration: underline;
+}
+
+/* qform css transformation */
+.qformWrapper {
+    /* border: 2px solid #fff; */
+    /* background: #edf2ef; */
+    position: relative;
+    padding: 0;
+    margin: 0;
+    
+}
+.qform.active {
+    transform: rotate(0deg);
+    transition: 0.35s;
+    opacity: 1; 
+    position: fixed;
+    overflow-x: auto;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+    right: 20px;
+    bottom: 0;
+    background: #eae2b7;
+    visibility: visible;
+    width: auto;
+    overflow-y: auto;
+    z-index: 1000;
+    scroll-behavior: smooth;
+    outline: none;
+    scrollbar-width: none;
+    overflow-y: scroll;
+}
+.qform {
+    /* border:2px solid #000; */
+    padding: 2vw 4vh;
+    max-width: 912px;
+    margin: 0 auto;
+    transform: translate(20px, 10px);
+    transition: 0.4s;
+    visibility: hidden;
+    position: fixed;
+    right: -20px;
+    bottom: 0;
+    left: 0;
+    top: 0;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.qbackArrow {
+    padding: 0.22rem 0;
+    display: block;
+    position: relative;
+}
+.qbackArrow img {
+    position: relative;
+    left: -20px;
+}
+.qbackArrow img:hover {
+    position: relative;
+    transition: 0.3s;
+    transform: translate(-10px);
+}
+.qformInputContent {
+    padding: 1px;
+}
+.qformHeading {
+    padding: 0.4rem 0;
+    margin-top: 2px;
+}
+.qformTitle font {
+    font-size: 1.3em;
+    font-family: monospace;
+    font-weight: lighter;
+    color: #212738;
+}
+.qformBody {
+    padding: 1px;
+    margin-top: 5px;
+}
+.qform-mw {
+    list-style: none;
+}
+.qinputContainer {
+    position: relative;
+    height: 56px;
+    border-radius: 0.5rem;
+    margin-bottom: 15px;
+}
+.qwc {
+    margin-top: 15px;
+}
+.qmedium {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid #000;
+    outline: none;
+    font-weight: 700;
+    text-indent: 0.75rem;
+    color: rgba(#fff, 0.875);
+
+&.qmedium:focus + .qinputPlaceholder {
+    transform: translate(0.625rem, -10px) scale(0.8);
+    // opacity: 0.4;
+    // top: -10px;
+}
+}
+
+.qinputPlaceholder {
+    color: rgba(white, 0.875);
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    padding: 0 0.25rem;
+    font-weight: 700;
+    transform: translate(0.5rem, 15px);
+    transform-origin: 0% 0%;
+    background: transparent;
+    pointer-events: none;
+    transition: transform 0.35s, background 0.35s;
+}
+// .qinputPlaceholder {
+//     border: 2px solid;
+//     top: -10px;
+// }
+
+.qinputPlaceholder span {
+    font-weight: lighter;
+
+}
+.qinputPlaceholder span:focus {
+    opacity: 0.6;
+    font-weight: 500;
+}
+.qinputQContainer {
+    font-weight: 600;
+}
+.qinputQ {
+    line-height: 1.15;
+    background: transparent;
+    height: 120px;
+    padding: 2vw;
+    border: 2px solid #000;
+    resize: vertical;
+    outline: 0;
+    width: 100%;
+}
+.qformSubmit {
+    /* border: 1px solid; */
+    padding: 0.2vw;
+}
+.qformTransWrapper {
+    /* border: 1px solid; */
+    vertical-align: middle;
+}
+.qformTransWrapper input {
+    width: 100%;
+    padding: 3px;
+    background: #000;
+    outline: none;
+    margin: 10px 0;
+    height: 52px;
+    border-radius: 3px;
+    color: #fff;
+}
+.qformTransWrapper > input:hover {
+    transform: scale(1.01);
+}
+
+/* @media screen and (max-width: 612px) {
+    .contactPageTrans > h1 {
+        padding-top: 10px;
+    }
+    .qform.active {
+        border: 0;
+        bottom: 0;
+        width: 100%;
+        transition: 0.1s;
+        overflow-y: scroll;
+    }
+} */

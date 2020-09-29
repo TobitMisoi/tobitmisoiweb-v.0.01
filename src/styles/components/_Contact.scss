@@ -1,0 +1,63 @@
+.contact-page {
+    display: block;
+}
+.contact-page-container {
+    padding: 5rem;
+    // background: #ff4442;
+}
+.contact-page-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    // gap: 1px 1px;
+    // background: chocolate;
+    max-width: 912px;
+    margin: auto;
+    h5 {
+        font-size: 16px;
+        padding: .9rem 0rem 1.2rem 0rem;
+
+        &::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 2px;
+            background: darkcyan;
+            position: relative;
+        }
+    }
+    li {
+        padding: .6rem;
+        border: 1px solid #161616;
+    }
+    .generalEnq {
+        // background: #ff8;
+        grid-area: 1/1;
+    }
+    .marketing {
+        // background: rgb(5, 167, 54);
+        grid-area: 2/2;
+    }
+    .joinConversation {
+        // background: rgb(207, 92, 46);
+        grid-area: 3/1;
+    }
+    .hireMe {
+        // background: rgb(87, 93, 182);
+        grid-area: 4/2;
+    }
+}
+.generalEnqTrans {
+    // background: chocolate;
+    
+    a {
+        // background: darkgoldenrod;
+        display: block;
+        padding: .1rem 0 2rem .3rem;
+
+        code {
+            color: #151515;
+            opacity: .8;
+        }
+    }
+}

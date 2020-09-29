@@ -1,0 +1,166 @@
+// .content {
+//     max-width: 600px;
+//     // background: crimson;
+//     padding: 0.7rem;
+//     position: relative;
+//     overflow: hidden;
+//     @include media("<=phone") {
+//         padding: 0.2rem;
+//     }
+
+//     p {
+//         // border: 1px solid;
+//         overflow: hidden;
+//         position: relative;
+//         font-size: 1.2em;
+//         color: #f8f8f8;
+//         font-weight: lighter;
+//         font-family: "Mansalva", cursive;
+//         padding: .2rem;
+//         span {
+//             &::before {
+//                 content: "";
+//                 position: relative;
+//                 animation: bbi 7s infinite;
+//                 background: transparent;
+//                 text-shadow: -1px 1px 1px #fff;
+//                 font-size: 2em;
+//             }
+
+//             @keyframes bbi {
+//                 from {
+//                     content: "Enterprise Automation";
+//                     position: relative;
+//                     color: #f8f8f8;
+//                     font-weight: 500;
+//                 }
+//                 to {
+//                     content: "Biography";
+//                     position: relative;
+//                     color: #f8f8f8;
+//                     font-weight: 500;
+//                 }
+//             }
+//         }
+//         h3 {
+//             color: #f8f8f8;
+//             font-weight: 300;
+//             opacity: 0.5;
+//             font-size: 1.6em;
+//         }
+//     }
+//     a {
+//         position: relative;
+//         display: inline-block;
+//         margin-top: 20px;
+//         background: #fff;
+//         padding: 14px 7.4px;
+//         border-radius: 10px;
+//         color: #808088;
+//         text-decoration: none;
+//         text-transform: uppercase;
+//         font-weight: 500;
+//     }
+// }
+// .intro-heading {
+//     color: #f8f8f8;
+//     font-size: 2.5em;
+//     font-weight: 300;
+//     opacity: 0.5;
+//     background: #f8f;
+//     overflow-y: hidden;
+//     background-attachment: fixed;
+
+//     span {
+//         color: tomato;
+//         background: #f8f8f8;
+//         font-size: 1.2em;
+//         font-weight: 300;
+//         opacity: 0.5;
+//         letter-spacing: 0.01rem;
+//     }
+// }
+
+.intro__content {
+    max-width: 600px;
+    padding: 1rem;
+    overflow: hidden;
+    @include media("<=phone") {
+        padding: 0.4rem;
+    }
+    .intro-content-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0.3rem;
+        .intro-heading {
+            font {
+                font-size: 2rem;
+                font-weight: lighter;
+                @include media("<=phone") {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+        .intro-content-items {
+            position: relative;
+            padding: 0.2rem 0 0.2rem 0;
+            .myName {
+                font {
+                    color: tomato;
+                    font-size: 2.9rem;
+                    opacity: 0.5;
+                    position: relative;
+                    @include media("<=phone") {
+                        font-size: 2.1rem;
+                    }
+                }
+            }
+            .intro-specialities {
+                padding: 0 0 0.4rem 0;
+                font {
+                    // font-size: 1.2rem;
+                    code {
+                        color: #00ff00;
+                        @include media("<=phone") {
+                            font-size: 1.1rem;
+                        }
+                    }
+                    span {
+                        color: #00ff00;
+                        font-family: "Comic Neue", cursive;
+                        opacity: .6;
+                        @include media("<=phone") {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+            .intro-brief-description {
+                padding: 1.4rem 0 0 0;
+                p {
+                    // font-size: 1.2rem;
+                    a {
+                        text-decoration: underline;
+                        color: #00ff00;
+                        @include media("<=phone") {
+                            font-size: 1.1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    font,
+    code,
+    a,
+    p {
+        font-family: "Comic Neue", cursive;
+        overflow: hidden;
+        color: #f8f8f8;
+        opacity: .6;
+        font-size: 1.2rem;
+        @include media("<=phone") {
+            font-size: 1.1rem;
+        }
+    }
+}
